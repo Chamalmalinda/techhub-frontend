@@ -27,7 +27,7 @@ export default function ProductOverview() {
         setStatus("success");
       })
       .catch(() => {
-        toast.error("Product not found.");
+        toast.error("Product not found. Please try again with a valid product ID.");
         setStatus("error");
       });
   }, [params.productID]);
