@@ -1,12 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Test from "./components/test";
 import HomePage from "./pages/homePage";
 import LoginPage from "./pages/loginPage";
 import RegisterPage from "./pages/registerPage";
 import AdminPage from "./pages/admin/adminPage";
 import { Toaster } from "react-hot-toast";
-import TestPage from "./pages/test";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import ForgetPasswordPage from "./pages/forgetPasswordPage";
 
@@ -24,7 +22,6 @@ function App() {
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/register" element={<RegisterPage/>}/>
       <Route path="/admin/*" element={<AdminPage/>}/>
-      <Route path="/test/*" element={<TestPage/>}/>
       <Route path="/forgot-password" element={<ForgetPasswordPage/>}></Route>
       
 
