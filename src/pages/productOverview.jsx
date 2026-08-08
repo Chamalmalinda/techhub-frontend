@@ -51,7 +51,6 @@ export default function ProductOverview() {
     }
 
     addToCart(product, 1);
-    toast.success("Product added to cart.");
   }
 
   function handleBuyNow() {
